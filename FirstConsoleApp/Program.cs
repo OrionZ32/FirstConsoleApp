@@ -6,21 +6,16 @@ namespace FirstConsoleApp
     {
         static void Main(string[] args)
         {
-            string color, pluralNoun, food;
+            int[] luckyNumbers = { 2, 7, 9, 16, 23, 34 };
+            
+            string[] cars = new string[3];
+            cars[0] = "Honda Civic";
+            cars[1] = "Nissan 370z";
+            cars[2] = "Dodge Challenger";
 
-            Console.Write("Enter a color: ");
-            color = Console.ReadLine();
 
-            Console.Write("Enter a plural noun: ");
-            pluralNoun = Console.ReadLine();
-
-            Console.Write("Enter a food: ");
-            food = Console.ReadLine();
-
-            Console.WriteLine("Roses are " + color);
-            Console.WriteLine(pluralNoun + " are blue");
-            Console.WriteLine("I love " + food);
-
+            Console.WriteLine( luckyNumbers[1] );
+            Console.WriteLine(cars[0]);
 
             Console.ReadLine();
         }
