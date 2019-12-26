@@ -6,25 +6,17 @@ namespace FirstConsoleApp
     {
         static void Main(string[] args)
         {
-            int cubedNumber = cube(3);
-            Console.WriteLine(cubedNumber);
+            bool isMale = true;
 
-            int squaredNumber = square(4);
-            Console.WriteLine(squaredNumber);
+            if (isMale)
+            {
+                Console.WriteLine("You are male");
+            } else
+            {
+                Console.WriteLine("You are not male");
+            }
 
             Console.ReadLine();
-        }
-
-        static int cube(int num)
-        {
-            int result = num * num * num;
-            return result;
-        }
-
-        static int square(int num)
-        {
-            int result = num * num;
-            return result;
         }
        
     }
