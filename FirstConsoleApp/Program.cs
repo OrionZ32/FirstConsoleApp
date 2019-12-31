@@ -8,14 +8,30 @@ namespace FirstConsoleApp
         {
             string secretWord = "honda";
             string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
 
-            while(guess != secretWord)
+            while(guess != secretWord && !outOfGuesses)
             {
-                Console.Write("Try to guess the secret word: ");
-                guess = Console.ReadLine();
+                if (guessCount < guessLimit)
+                {
+                    Console.Write("Try to guess the secret word (HINT: Japanese car manufacture) : ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                } else
+                {
+                    outOfGuesses = true;               
+                }
             }
-
-            Console.Write("You guessed the correct word!");
+            if(outOfGuesses)
+            {
+                Console.Write("You are out of guesses");
+            } else
+            {
+                Console.Write("You guessed the correct word!");
+            }
+            
 
             Console.ReadLine();
         }
