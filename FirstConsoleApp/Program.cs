@@ -6,32 +6,17 @@ namespace FirstConsoleApp
     {
         static void Main(string[] args)
         {
-            string secretWord = "honda";
-            string guess = "";
-            int guessCount = 0;
-            int guessLimit = 3;
-            bool outOfGuesses = false;
-
-            while(guess != secretWord && !outOfGuesses)
-            {
-                if (guessCount < guessLimit)
-                {
-                    Console.Write("Try to guess the secret word (HINT: Japanese car manufacture) : ");
-                    guess = Console.ReadLine();
-                    guessCount++;
-                } else
-                {
-                    outOfGuesses = true;               
-                }
-            }
-            if(outOfGuesses)
-            {
-                Console.Write("You are out of guesses");
-            } else
-            {
-                Console.Write("You guessed the correct word!");
-            }
+            int[] luckyNumbers = { 3, 7, 11, 17, 34 };
             
+            for(int i = 0; i < luckyNumbers.Length; i++)
+            {
+                Console.WriteLine(luckyNumbers[i]);
+            }       
+            
+            for(int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(i);
+            }
 
             Console.ReadLine();
         }
