@@ -6,19 +6,21 @@ namespace FirstConsoleApp
     {
         static void Main(string[] args)
         {
-            int[] luckyNumbers = { 3, 7, 11, 17, 34 };
-            
-            for(int i = 0; i < luckyNumbers.Length; i++)
-            {
-                Console.WriteLine(luckyNumbers[i]);
-            }       
-            
-            for(int i = 1; i <= 10; i++)
-            {
-                Console.WriteLine(i);
-            }
+            Console.WriteLine(GetPow(4, 3 ));
 
             Console.ReadLine();
+        }
+
+        static int GetPow(int baseNum, int powNum)
+        {
+            int result = 1;
+
+            for(int i = 0; i < powNum; i++)
+            {
+                result = result * baseNum;
+            }
+            
+            return result;
         }
     }
 }
