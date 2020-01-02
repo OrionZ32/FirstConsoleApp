@@ -2,16 +2,14 @@
 
 namespace FirstConsoleApp
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Student student1 = new Student("Jrue", "Computer Science", 3.2);
-            Student student2 = new Student("May", "Engineering", 3.8);
+    class Program {
+        static void Main(string[] args) {
+            Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "R");
+            Movie forrestGump = new Movie("Forrest Gump", "Roubert Zemeckis", "PG-13");
 
-            Console.WriteLine(student1.HasHonors());
-            Console.WriteLine(student2.HasHonors());
 
+            Console.WriteLine(pulpFiction.Rating);
+            Console.WriteLine(forrestGump.director);
             Console.ReadLine();
         }
 
