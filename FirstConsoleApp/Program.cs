@@ -6,14 +6,12 @@ namespace FirstConsoleApp
     {
         static void Main(string[] args)
         {
-            Book book1 = new Book("Fahrenheit 451", "Ray Bradbury", 158);
-            Book book2 = new Book("The Giver", "Lois Lowry", 240);
-            Book book3 = new Book();
+            Student student1 = new Student("Jrue", "Computer Science", 3.2);
+            Student student2 = new Student("May", "Engineering", 3.8);
 
-            Console.WriteLine(book1.title);
-            Console.WriteLine(book1.author);
-            Console.WriteLine(book1.pages);
-            
+            Console.WriteLine(student1.HasHonors());
+            Console.WriteLine(student2.HasHonors());
+
             Console.ReadLine();
         }
 
