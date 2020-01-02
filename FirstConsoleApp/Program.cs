@@ -6,21 +6,16 @@ namespace FirstConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(GetPow(4, 3 ));
+            int[,] numberGrid = {
+                {1, 2},
+                {3, 4},
+                {5, 6}
+            };
+
+            Console.WriteLine(numberGrid[1, 1]);
 
             Console.ReadLine();
         }
 
-        static int GetPow(int baseNum, int powNum)
-        {
-            int result = 1;
-
-            for(int i = 0; i < powNum; i++)
-            {
-                result = result * baseNum;
-            }
-            
-            return result;
-        }
     }
 }
